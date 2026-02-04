@@ -4,122 +4,188 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Don Norman | HCI Legend</title>
+  <style>
+    /* Allowed CSS only */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #f4f4f4;
+      font-size: 16px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-family: Verdana, sans-serif;
+      font-size: 2.5em;
+      margin: 0;
+      color: #000;
+    }
+
+    header p {
+      font-family: Arial, sans-serif;
+      font-size: 1em;
+      color: #666;
+      margin: 5px 0 0;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: #333;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.9em;
+    }
+
+    nav a[aria-current="page"] {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .content {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .left {
+      flex: 1 1 55%;
+    }
+
+    .right {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .right img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: 1.5em;
+      color: #222;
+      margin-top: 0;
+    }
+
+    fieldset {
+      margin-top: 15px;
+    }
+
+    blockquote {
+      display: block;
+      background-color: #f9f9f9;
+      padding: 20px;
+      font-family: Georgia, serif;
+      font-size: 1.1em;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    blockquote footer {
+      margin-top: 10px;
+      font-size: 0.9em;
+      font-family: Arial, sans-serif;
+      color: #888;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #999;
+      background-color: #ffffff;
+    }
+
+    footer a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body bgcolor="#f4f4f4" text="#333333" link="#0066cc" vlink="#551a8b">
+<body>
 
-  <table width="800" align="center" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="0">
-    <tr>
-      <td>
+  <header>
+    <h1>DON NORMAN</h1>
+    <p>Cognitive Scientist & User Experience Pioneer</p>
+  </header>
 
-        <header>
-          <table width="100%" border="0">
-            <tr>
-              <td align="center">
-                <font size="7" face="Verdana, sans-serif"><b>DON NORMAN</b></font><br>
-                <font size="3" color="#666666" face="Arial"><i>Cognitive Scientist & User Experience Pioneer</i></font>
-              </td>
-            </tr>
-          </table>
-          <hr size="1" color="#eeeeee">
-        </header>
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html" aria-current="page">HOME</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="analysis.html">ANALYSIS</a></li>
+      <li><a href="norman2klm.html">GOMS-KLM</a></li>
+      <li><a href="assignment01.html">Lab 01 Rules</a></li>
+    </ul>
+  </nav>
 
-        <nav>
-          <table width="100%" bgcolor="#333333" cellpadding="10" cellspacing="0">
-            <tr>
-              <td align="center">
-                <font face="Arial" size="2">
-                  <a href="index.html" style="color: white; text-decoration: none;"><b>HOME</b></a> &nbsp;&nbsp;&nbsp;
-                  <font color="#999999">|</font> &nbsp;&nbsp;&nbsp;
-                  <a href="cv.html" style="color: white; text-decoration: none;">CV</a> &nbsp;&nbsp;&nbsp;
-                  <font color="#999999">|</font> &nbsp;&nbsp;&nbsp;
-                  <a href="contact.html" style="color: white; text-decoration: none;">CONTACT</a> &nbsp;&nbsp;&nbsp;
-                  <font color="#999999">|</font> &nbsp;&nbsp;&nbsp;
-                  <a href="analysis.html" style="color: white; text-decoration: none;">ANALYSIS</a> &nbsp;&nbsp;&nbsp;
-                  <font color="#999999">|</font> &nbsp;&nbsp;&nbsp;
-                  <a href="norman2klm.html" style="color: white; text-decoration: none;">GOMS-KLM</a>
-                </font>
-              </td>
-            </tr>
-          </table>
-        </nav>
+  <main>
+    <div class="content">
+      <div class="left">
+        <h2>Biography</h2>
+        <p>
+          Don Norman is a pioneer in the field of <strong>Human–Computer Interaction</strong>.  
+          He is the director of The Design Lab at the University of California, San Diego.  
+          He is best known for his books on design, especially <i>"The Design of Everyday Things."</i>
+        </p>
 
-        <br>
+        <fieldset>
+          <legend><strong>Core Design Principles</strong></legend>
+          <ul>
+            <li><strong>Affordances:</strong> Physical properties that suggest how to use an object.</li>
+            <li><strong>Signifiers:</strong> Visual cues that tell you where to interact.</li>
+            <li><strong>Feedback:</strong> Clear communication about the result of an action.</li>
+          </ul>
+        </fieldset>
+      </div>
 
-        <main>
-          <table width="100%" border="0" cellpadding="10">
-            <tr>
-              <td width="60%" valign="top">
-                <font face="Georgia, serif" size="5" color="#222222">Biography</font>
-                <hr align="left" width="50" size="3" color="#333333">
-                
-                <p align="justify">
-                  <font face="Arial, sans-serif" size="3" dir="ltr">
-                    Don Norman is a pioneer in the field of <b>Human–Computer Interaction</b>. 
-                    He is the director of The Design Lab at the University of California, San Diego. 
-                    He is best known for his books on design, especially <i>"The Design of Everyday Things."</i>
-                  </font>
-                </p>
+      <div class="right">
+        <img src="norman.jpg" alt="Don Norman Portrait">
+        <p><em>The Father of UX</em></p>
+      </div>
+    </div>
 
-                <fieldset>
-                  <legend><font face="Arial"><b>Core Design Principles</b></font></legend>
-                  <ul type="square">
-                    <li><strong>Affordances:</strong> Physical properties that suggest how to use an object.</li>
-                    <li><strong>Signifiers:</strong> Visual cues that tell you where to interact.</li>
-                    <li><strong>Feedback:</strong> Clear communication about the result of an action.</li>
-                  </ul>
-                </fieldset>
-              </td>
+    <blockquote>
+      "Good design is actually a lot harder to notice than poor design, in part because good designs fit our needs so well that the design is invisible."
+      <footer>— DON NORMAN</footer>
+    </blockquote>
+  </main>
 
-              <td width="40%" align="center" valign="top">
-                <table border="1" cellpadding="5" cellspacing="0" bordercolor="#dddddd">
-                  <tr>
-                    <td>
-                      <img src="norman.jpg" alt="Don Norman Portrait" width="220">
-                    </td>
-                  </tr>
-                </table>
-                <p><font size="2" face="Arial" color="#888888"><i>The Father of UX</i></font></p>
-              </td>
-            </tr>
-          </table>
-
-          <br>
-
-          <table width="100%" bgcolor="#f9f9f9" cellpadding="20" border="0">
-            <tr>
-              <td align="center">
-                <font size="4" face="Georgia">
-                  "Good design is actually a lot harder to notice than poor design, 
-                  in part because good designs fit our needs so well that the design is invisible."
-                </font>
-                <br><br>
-                <font size="2" face="Arial"><b>— DON NORMAN</b></font>
-              </td>
-            </tr>
-          </table>
-        </main>
-
-        <br><br>
-        <hr size="1" color="#eeeeee">
-
-        <footer>
-          <table width="100%" border="0">
-            <tr>
-              <td align="center">
-                <font size="2" face="Arial" color="#999999">
-                  &copy; 2026 HCI–CG Course <br>
-                  <a href="assignment01.html">Instructions</a> | 
-                  <a href="https://github.com/humeraaa/hci-cg-2026">Source Code</a> | 
-                  <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
-                </font>
-              </td>
-            </tr>
-          </table>
-        </footer>
-
-      </td>
-    </tr>
-  </table>
+  <footer>
+    &copy; 2026 HCI–CG Course <br>
+    <a href="assignment01.html">Instructions</a> | 
+    <a href="https://github.com/humeraaa/hci-cg-2026">Source Code</a> | 
+    <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
+  </footer>
 
 </body>
 </html>
