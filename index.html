@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding for proper text rendering -->
   <meta charset="UTF-8">
-
-  <!-- Page title shown in browser tab and screen readers -->
-  <title>Don Norman – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don Norman – Home | HCI Pioneer</title>
 </head>
 <body>
 
-  <!-- Page header: identifies the site and its purpose -->
   <header>
-    <h1>Don Norman</h1>
-    <p>Human–Computer Interaction Philosopher</p>
+    <h1 align="center">Don Norman</h1>
+    <p align="center"><em>Human–Computer Interaction Philosopher & Design Advocate</em></p>
+    <hr>
   </header>
 
-  <!-- Primary navigation landmark for keyboard and screen reader users -->
   <nav aria-label="Primary navigation">
-    <ul>
-      <!-- Current page is indicated using aria-current -->
-      <li>
-        <a href="index.html" aria-current="page">Home</a>
-      </li>
-
-      <!-- Navigation links to other site sections -->
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="analysis.html">Interaction Analysis</a></li>
-      <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
-      <li><a href="assignment01.html">Lab 01 Rules</a></li>
-
-    </ul>
+    <table width="100%" border="0">
+      <tr>
+        <td align="center"><a href="index.html" aria-current="page"><strong>Home</strong></a></td>
+        <td align="center"><a href="cv.html">CV</a></td>
+        <td align="center"><a href="contact.html">Contact</a></td>
+        <td align="center"><a href="analysis.html">Interaction Analysis</a></td>
+        <td align="center"><a href="norman2klm.html">Norman–GOMS–KLM</a></td>
+        <td align="center"><a href="assignment01.html">Lab 01 Rules</a></td>
+      </tr>
+    </table>
   </nav>
 
-  <!-- Main content landmark: unique content of this page -->
+  <hr>
+
   <main>
     <section>
-      <!-- Section heading establishes content hierarchy -->
       <h2>Biography</h2>
-
-      <!-- Informative image with alternative text for accessibility -->
-      <img src="norman.jpg" alt="Portrait of Don Norman">
+      
+      <figure>
+        <img src="norman.jpg" alt="Portrait of Don Norman" width="300">
+        <figcaption><small><i>Don Norman: The father of User-Centered Design.</i></small></figcaption>
+      </figure>
 
       <p>
-        Don Norman is a pioneer in the field of Human–Computer Interaction,
-        known for his work on user-centered design, usability, and cognitive
-        engineering.
+        Don Norman is a pioneer in the field of <strong>Human–Computer Interaction (HCI)</strong>. 
+        He is best known for his influential book, <i>"The Design of Everyday Things,"</i> 
+        where he introduced concepts like:
       </p>
+
+      <ul>
+        <li><strong>Affordances:</strong> What an object can do.</li>
+        <li><strong>Signifiers:</strong> Where an action should take place.</li>
+        <li><strong>Feedback:</strong> Information about the result of an action.</li>
+      </ul>
+
+      <blockquote>
+        "Design is really an act of communication, which means having a deep understanding of the person with whom the designer is communicating." 
+        <br>— <strong>Don Norman</strong>
+      </blockquote>
     </section>
   </main>
 
-  <!-- Footer contains meta or supplementary information -->
+  <hr>
+
   <footer>
-    <p>&copy; 2026 HCI–CG Course</p>
-  <p>
-    <a href="assignment01.html">Lab 01 Instructions</a> |
-    <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> |
-    <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
-  </p>
+    <address>
+      <p align="center">
+        &copy; 2026 HCI–CG Course | 
+        <a href="assignment01.html">Lab 01 Instructions</a> |
+        <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> |
+        <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
+      </p>
+    </address>
   </footer>
 
 </body>
