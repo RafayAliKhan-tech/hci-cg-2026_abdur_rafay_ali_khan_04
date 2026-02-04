@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Character encoding for consistent text rendering -->
   <meta charset="UTF-8">
-
-  <!-- Page title shown in browser tab and announced by screen readers -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Don Norman – CV</title>
+
+  <!-- Minimal CSS allowed in Lab 01 -->
+  <style>
+    body { font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; }
+    h1, h2, h3 { font-family: Georgia, serif; }
+    nav a { color: #0066cc; text-decoration: none; }
+    nav a[aria-current="page"] { font-weight: bold; color: #000; }
+    footer { font-size: 0.9em; color: #555; }
+  </style>
 </head>
 <body>
 
-  <!-- Page header: identifies the page -->
+  <!-- Page header -->
   <header>
     <h1>Curriculum Vitae</h1>
   </header>
 
-  <!-- Primary navigation: consistent across all pages -->
+  <!-- Navigation -->
   <nav aria-label="Primary navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
-
-      <!-- Current page is indicated using aria-current -->
       <li><a href="cv.html" aria-current="page">CV</a></li>
-
       <li><a href="contact.html">Contact</a></li>
       <li><a href="analysis.html">Interaction Analysis</a></li>
       <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
       <li><a href="assignment01.html">Lab 01 Rules</a></li>
-
     </ul>
   </nav>
 
-  <!-- Main landmark: unique content of this page -->
+  <!-- Main content -->
   <main>
-
     <section>
       <h2>Education</h2>
       <ul>
@@ -44,7 +46,6 @@
     <section>
       <h2>Work Experience</h2>
 
-      <!-- Each role is grouped as a separate content unit -->
       <article>
         <h3>Professor of Cognitive Science</h3>
         <p>University of California, San Diego</p>
@@ -55,11 +56,16 @@
         <p>Founder of the Nielsen Norman Group</p>
       </article>
     </section>
-
   </main>
 
-  <!-- Footer contains supplementary navigation and meta information -->
+  <!-- Footer -->
   <footer>
+    <p>
+      &copy; 2026 HCI–CG Course <br>
+      <a href="assignment01.html">Lab 01 Instructions</a> |
+      <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> |
+      <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
+    </p>
     <p><a href="index.html">Back to Home</a></p>
   </footer>
 
