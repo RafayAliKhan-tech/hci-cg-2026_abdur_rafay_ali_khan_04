@@ -116,13 +116,12 @@
 </html> -->
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Don Norman – HCI Overview</title>
+  <title>Don Norman – Human Computer Interaction</title>
 
   <style>
     body {
@@ -176,9 +175,10 @@
     table, th, td {
       border: 1px solid #aaa;
       padding: 8px;
+      text-align: left;
     }
 
-    .section-box {
+    .box {
       background-color: #fafafa;
       padding: 15px;
       margin-bottom: 20px;
@@ -195,7 +195,7 @@
 
 <header>
   <h1>Don Norman</h1>
-  <p>Cognitive Scientist & Pioneer of Human–Computer Interaction</p>
+  <p>Cognitive Scientist and Contributor to Human–Computer Interaction</p>
 </header>
 
 <nav aria-label="Primary Navigation">
@@ -209,123 +209,130 @@
 <main>
 
 <!-- ================= SECTION 1 ================= -->
-<section class="section-box">
+<section class="box">
   <h2>Don Norman and Human–Computer Interaction</h2>
 
   <p>
-    Don Norman is one of the most influential researchers in the field of
+    Don Norman is a prominent figure in the field of
     <strong>Human–Computer Interaction (HCI)</strong>.
-    His work focuses on how humans interact with everyday objects and digital systems.
+    His work focuses on understanding how users interact with systems
+    and how design can reduce human error.
   </p>
 
   <p>
-    In <i>The Design of Everyday Things</i>, Norman explains that good design
-    should make actions visible, reduce errors, and match the user’s mental model.
+    According to Dix et al., HCI is concerned with the design, evaluation,
+    and implementation of interactive computing systems for human use.
+    Norman’s ideas strongly support this definition by emphasizing
+    usability and user-centered design.
   </p>
 
   <ul>
-    <li><strong>Affordances:</strong> Properties that suggest how an object can be used.</li>
-    <li><strong>Signifiers:</strong> Visual indicators that show where actions should occur.</li>
-    <li><strong>Feedback:</strong> Information returned to the user after an action.</li>
-    <li><strong>Constraints:</strong> Limitations that prevent incorrect usage.</li>
+    <li><strong>Affordances:</strong> Properties that indicate possible actions.</li>
+    <li><strong>Signifiers:</strong> Cues that communicate where actions should occur.</li>
+    <li><strong>Feedback:</strong> Information returned after an action.</li>
+    <li><strong>Constraints:</strong> Restrictions that prevent incorrect usage.</li>
   </ul>
 </section>
 
 <!-- ================= SECTION 2 ================= -->
-<section class="section-box">
-  <h2>Applying Don Norman’s Principles Using HTML</h2>
+<section class="box">
+  <h2>HCI Concepts Explained Through HTML</h2>
 
   <p>
-    HTML can be used to support Don Norman’s usability principles by providing
-    structure, clarity, and accessibility to web content.
+    HTML provides the structural foundation of web interfaces.
+    When designed correctly, HTML supports HCI principles such as
+    visibility, consistency, and feedback.
   </p>
 
   <table>
     <tr>
-      <th>Norman’s Principle</th>
-      <th>HTML Implementation</th>
+      <th>HCI Principle</th>
+      <th>HTML Example</th>
     </tr>
     <tr>
       <td>Visibility</td>
-      <td>Using headings (<code>&lt;h1&gt;–&lt;h6&gt;</code>) to show content hierarchy</td>
+      <td>Clear headings using <code>&lt;h1&gt;–&lt;h6&gt;</code></td>
     </tr>
     <tr>
       <td>Feedback</td>
-      <td>Confirmation messages after form submission</td>
+      <td>Confirmation messages after user actions</td>
     </tr>
     <tr>
-      <td>Affordances</td>
-      <td>Buttons (<code>&lt;button&gt;</code>) clearly indicate clickable actions</td>
+      <td>Consistency</td>
+      <td>Repeated navigation structure on all pages</td>
     </tr>
     <tr>
       <td>Constraints</td>
-      <td>Required attributes in input fields</td>
+      <td>Using required fields in forms</td>
     </tr>
   </table>
 </section>
 
 <!-- ================= SECTION 3 ================= -->
-<section class="section-box">
-  <h2>Common HTML Errors and Usability Impact</h2>
+<section class="box">
+  <h2>Common HTML Errors and Usability Problems</h2>
 
   <p>
-    Poor HTML practices can negatively affect usability and violate
-    Don Norman’s design principles.
+    Interaction Design emphasizes that poor implementation leads
+    to poor user experience. The following HTML errors negatively
+    affect usability.
   </p>
 
   <ol>
     <li>
-      <strong>Missing <code>alt</code> attribute:</strong>
-      Breaks accessibility and feedback for visually impaired users.
+      <strong>Missing <code>alt</code> text in images:</strong>
+      Breaks accessibility and violates usability principles.
     </li>
     <li>
-      <strong>Improper heading order:</strong>
-      Confuses users and damages mental models.
+      <strong>Improper heading structure:</strong>
+      Confuses users and disrupts mental models.
     </li>
     <li>
       <strong>Non-semantic HTML:</strong>
-      Reduces clarity and discoverability of content.
+      Reduces clarity and understandability.
     </li>
     <li>
-      <strong>No meta viewport:</strong>
-      Causes poor usability on mobile devices.
+      <strong>No viewport meta tag:</strong>
+      Causes poor interaction on mobile devices.
     </li>
     <li>
-      <strong>Unlabeled form fields:</strong>
-      Violates visibility and feedback principles.
+      <strong>Unclear navigation:</strong>
+      Violates consistency and discoverability.
     </li>
   </ol>
 </section>
 
 <!-- ================= SECTION 4 ================= -->
-<section class="section-box">
+<section class="box">
   <h2>Conclusion</h2>
 
   <p>
-    Don Norman’s principles provide a strong theoretical foundation for
-    designing usable and user-centered interfaces.
-    When applied correctly, HTML supports these principles by offering
-    structure, accessibility, and clarity.
+    The principles discussed by Don Norman align closely with the
+    foundations of Human–Computer Interaction described by Dix et al.
+    and Interaction Design literature. Proper use of HTML supports
+    these principles by improving structure, clarity, and usability.
   </p>
 </section>
 
 <!-- ================= REFERENCES ================= -->
-<section class="section-box">
+<section class="box">
   <h2>References</h2>
 
   <ul>
     <li>
-      Norman, D. A. (2013).
-      <i>The Design of Everyday Things</i>.
-      Basic Books, Chapter 1–2.
+      Dix, A., Finlay, J., Abowd, G. D., & Beale, R.
+      <i>Human–Computer Interaction</i>, Third Edition.
+      Pearson Education.
     </li>
     <li>
-      HCI–CG Course Lecture Slides, Week 1–Week 4.
+      Sharp, H., Preece, J., Rogers, Y.
+      <i>Interaction Design: Beyond Human–Computer Interaction</i>,
+      Fifth Edition. Wiley.
     </li>
     <li>
-      Preece, J., Rogers, Y., Sharp, H. (2015).
-      <i>Interaction Design: Beyond Human–Computer Interaction</i>.
-      Wiley.
+      Wikipedia contributors.
+      <i>Don Norman</i> and <i>Human–Computer Interaction</i>.
+      Wikipedia.
     </li>
   </ul>
 </section>
@@ -338,3 +345,4 @@
 
 </body>
 </html>
+
