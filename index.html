@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Don Norman – Home</title>
+  <title>Don Norman – Home</title>  <!-- Main Topic:Norman -->
 
   <style>
     body {
@@ -21,6 +21,8 @@
     }
     header, nav, main, footer {
       background-color: #ffffff;
+      padding: 10px;
+      margin-bottom: 10px;
     }
     h1 {
       font-family: Verdana, sans-serif;
@@ -39,6 +41,15 @@
     nav li {
       display: inline;
       margin-right: 15px;
+    }
+    fieldset {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    img {
+      border-radius: 6px;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -67,48 +78,55 @@
         <tr>
           <td width="60%" valign="top">
             <p>
-              Don Norman is a pioneer in the field of <strong>Human–Computer Interaction</strong>. 
-              He is the director of The Design Lab at the University of California, San Diego. 
-              He is best known for his books on design, especially <i>"The Design of Everyday Things."</i>
+              Don Norman is a leading <strong>cognitive scientist</strong> and pioneer of 
+              <strong>Human–Computer Interaction (HCI)</strong> and <strong>User Experience (UX)</strong> design. 
+              He is best known for his book <i>"The Design of Everyday Things"</i>, which explains 
+              that user errors are usually caused by poor design, not by users.
             </p>
 
             <fieldset>
               <legend><strong>Core Design Principles</strong></legend>
               <ul>
-                <li><strong>Affordances:</strong> Physical properties that suggest how to use an object.</li>
-                <li><strong>Signifiers:</strong> Visual cues that tell you where to interact.</li>
+                <li><strong>Affordances:</strong> Physical properties suggesting how to use an object.</li>
+                <li><strong>Signifiers:</strong> Visual cues showing where interaction should occur.</li>
                 <li><strong>Feedback:</strong> Clear communication about the result of an action.</li>
               </ul>
             </fieldset>
 
             <fieldset>
+              <legend><strong>Norman's Seven Stages of Action</strong></legend>
+              <ol>
+                <li>Forming the goal</li>
+                <li>Forming the intention</li>
+                <li>Specifying the action</li>
+                <li>Executing the action</li>
+                <li>Perceiving the system state</li>
+                <li>Interpreting the system state</li>
+                <li>Evaluating the outcome</li>
+              </ol>
+            </fieldset>
+
+            <fieldset>
+              <legend><strong>Gulfs of Interaction</strong></legend>
+              <p><strong>Gulf of Execution:</strong> The gap between what the user wants to do and what the system allows.</p>
+              <p><strong>Gulf of Evaluation:</strong> The gap between what the system does and how well the user understands it.</p>
+              <p>Good design minimizes both gulfs with clear actions and meaningful feedback.</p>
+            </fieldset>
+
+            <fieldset>
               <legend><strong>HCI Insights</strong></legend>
               <p>
-                According to Dix et al. (Human–Computer Interaction, Third Edition), HCI deals with the design and evaluation of interactive systems for human use. Don Norman’s work supports this by focusing on usability and human-centered design.
+                Don Norman emphasizes that users should not be blamed for mistakes; poor design is usually the cause.
               </p>
               <p>
-                According to <i>Interaction Design: Beyond Human–Computer Interaction (Fifth Edition)</i>, good interaction design aims to reduce user errors and cognitive load. Don Norman contributed by introducing clear design principles.
-              </p>
-              <p>
-                According to Don Norman, users should not be blamed for mistakes; poor design is usually the cause of user errors.
-              </p>
-              <p>
-                According to Wikipedia, Don Norman introduced key concepts such as:
-                <ul>
-                  <li><strong>Affordances</strong> – show possible actions</li>
-                  <li><strong>Signifiers</strong> – indicate where interaction should occur</li>
-                  <li><strong>Feedback</strong> – inform users about the result of actions</li>
-                  <li><strong>Constraints</strong> – limit incorrect actions</li>
-                </ul>
-              </p>
-              <p>
-                According to <i>Interaction Design (Fifth Edition)</i>, these concepts help users build correct mental models and improve usability.
+                These principles help users build correct mental models and improve usability.
               </p>
             </fieldset>
+
           </td>
 
           <td width="40%" valign="top" align="center">
-            <img src="norman.jpg" alt="Portrait of Don Norman" width="220">
+            <img src="./norman_img.jpeg" alt="Portrait of Don Norman" width="220">
             <p><i>The Father of UX</i></p>
           </td>
         </tr>
@@ -139,21 +157,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
