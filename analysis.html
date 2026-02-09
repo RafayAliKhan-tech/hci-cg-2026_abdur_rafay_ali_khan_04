@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interaction Analysis – Norman vs. GOMS</title>
+  <title>Interaction Analysis – Norman vs GOMS</title>
 
   <style>
     body {
@@ -21,7 +21,6 @@
     }
     header, nav, main, footer {
       background-color: #ffffff;
-      padding: 10px;
     }
     h1 {
       font-family: Verdana, sans-serif;
@@ -41,108 +40,157 @@
       display: inline;
       margin-right: 15px;
     }
+    nav a[aria-current="page"] {
+      font-weight: bold;
+      color: #000000;
+    }
     table {
-      border-collapse: collapse;
       width: 100%;
-      margin-top: 10px;
+      border-collapse: collapse;
+      font-size: 15px;
     }
     th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
+      border: 1px solid #cccccc;
+      padding: 10px;
       text-align: left;
+      vertical-align: top;
     }
     caption {
       font-weight: bold;
       text-align: left;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
-    .norman-goms-match {
-      background-color: #fff3cd; /* subtle highlight */
+    footer {
+      font-size: 0.9em;
+      color: #555555;
+      margin-top: 1em;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Interaction Analysis</h1>
-    <p>Norman (1988) vs. GOMS (1983): Enable Wi-Fi (iPhone 13 / Samsung S25)</p>
-  </header>
+<header>
+  <h1>Interaction Analysis</h1>
+  <p>Norman’s Action Cycle vs. GOMS using a mobile Wi-Fi toggle example</p>
+</header>
 
-  <nav aria-label="Primary navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="analysis.html" aria-current="page">Interaction Analysis</a></li>
-      <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
-      <li><a href="assignment01.html">Lab 01 Rules</a></li>
-    </ul>
-  </nav>
+<nav aria-label="Primary navigation">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a href="analysis.html" aria-current="page">ANALYSIS</a></li>
+    <li><a href="norman2klm.html">GOMS-KLM</a></li>
+    <li><a href="assignment01.html">Lab 01 Rules</a></li>
+  </ul>
+</nav>
 
-  <main>
-    <section>
-      <h2>Norman vs. GOMS Comparison Table</h2>
+<main>
 
-      <table>
-        <caption>Comparison of Norman’s stages and GOMS concepts using the Wi-Fi toggle example</caption>
-        <thead>
-          <tr>
-            <th scope="col">Norman’s Stage</th>
-            <th scope="col">Real-World Example</th>
-            <th scope="col">GOMS Interpretation &amp; Rationale</th>
-            <th scope="col">Alignment Analysis</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="norman-goms-match">
-            <th scope="row">Goal ↔ GOAL</th>
-            <td>“I need Wi-Fi ON to access the internet.”</td>
-            <td><strong>Goal:</strong> Enable-Wi-Fi. Top-level objective in GOMS.</td>
-            <td>✅ Direct correspondence between models.</td>
-          </tr>
-          <tr class="norman-goms-match">
-            <th scope="row">Plan ↔ METHOD &amp; Selection Rules</th>
-            <td>Decision: “I’ll use the quick toggle.”</td>
-            <td>Method &amp; Selection Rules: Swipe down → Control/Quick Panel → Wi-Fi</td>
-            <td>✅ Conceptual match</td>
-          </tr>
-          <tr>
-            <th scope="row">Specify</th>
-            <td>Visual search for Wi-Fi icon.</td>
-            <td>Not explicitly modeled in GOMS; KLM includes mental prep.</td>
-            <td>Key divergence: Norman models perception; GOMS abstracts it.</td>
-          </tr>
-          <tr class="norman-goms-match">
-            <th scope="row">Execute ↔ OPERATOR</th>
-            <td>Finger taps the Wi-Fi toggle.</td>
-            <td>Operator: Tap (primitive, timed action). KLM: [M][P][K]</td>
-            <td>✅ Direct match</td>
-          </tr>
-          <tr>
-            <th scope="row">Perceive / Interpret / Evaluate</th>
-            <td>Feedback loop: color change → interpretation → confirmation</td>
-            <td>Not modeled in GOMS</td>
-            <td>Fundamental divergence: Norman closes Gulf of Evaluation</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section>
-      <h2>Quick Note</h2>
-      <p>This page is included as a conceptual reference for Lab 01. Focus on semantic HTML and accessibility.</p>
-    </section>
-  </main>
-
-  <footer>
+  <section>
+    <h2>Purpose of This Analysis</h2>
     <p>
-      &copy; 2026 HCI–CG Course |
-      <a href="assignment01.html">Lab 01 Instructions</a> |
-      <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> |
-      <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
+      The purpose of this page is to compare <strong>Norman’s Action Cycle</strong> and
+      <strong>GOMS</strong> at an interaction level, using a simple and familiar task:
+      enabling Wi-Fi on a smartphone.
     </p>
-    <p><a href="index.html">Back to Home</a></p>
-  </footer>
+    <p>
+      This analysis follows the scope of <strong>Lab & Assignment 01</strong> and uses
+      selective concepts from <em>Dix et al., Human–Computer Interaction</em>
+      (Chapter 9 and Chapter 12).
+    </p>
+  </section>
+
+  <section>
+    <h2>Norman vs GOMS Comparison</h2>
+
+    <table>
+      <caption>Comparison using the task: “Enable Wi-Fi on a smartphone”</caption>
+      <thead>
+        <tr>
+          <th scope="col">Norman’s Stage</th>
+          <th scope="col">User Action</th>
+          <th scope="col">GOMS Mapping</th>
+          <th scope="col">Interpretation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Form Goal</th>
+          <td>User wants internet access</td>
+          <td>Goal: Enable Wi-Fi</td>
+          <td>Both models start with an explicit user goal</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Form Intention</th>
+          <td>Decides to use quick settings</td>
+          <td>Method selection</td>
+          <td>GOMS formalizes method choice using selection rules</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Specify Action</th>
+          <td>Searches for Wi-Fi icon</td>
+          <td>Mental operator (KLM)</td>
+          <td>Norman explicitly models perception and cognition</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Execute Action</th>
+          <td>Taps the Wi-Fi toggle</td>
+          <td>Operator: Tap</td>
+          <td>Direct alignment between execution and operator</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Evaluate Outcome</th>
+          <td>Icon changes color → Wi-Fi ON</td>
+          <td>Not modeled</td>
+          <td>Norman closes the Gulf of Evaluation through feedback</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Evaluation Perspective (Dix et al., Ch. 9)</h2>
+    <p>
+      Norman’s model is especially useful for <strong>evaluation</strong> because it
+      explains where interaction breakdowns occur through the
+      <strong>Gulf of Execution</strong> and <strong>Gulf of Evaluation</strong>.
+    </p>
+    <p>
+      GOMS, in contrast, is not an evaluation framework; it assumes
+      error-free expert performance and focuses on task structure rather than feedback.
+    </p>
+  </section>
+
+  <section>
+    <h2>Why GOMS Alone Is Not Enough</h2>
+    <p>
+      According to Dix et al. (Chapter 12), GOMS and KLM are predictive models.
+      They estimate task efficiency but do not explain user confusion,
+      misunderstanding, or interpretation.
+    </p>
+    <p>
+      Norman’s model complements GOMS by explaining <strong>why</strong> users succeed
+      or fail during interaction.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    &copy; 2026 HCI–CG Course <br>
+    <a href="assignment01.html">Lab 01 Instructions</a> |
+    <a href="https://github.com/humeraaa/hci-cg-2026">Starter Code</a> |
+    <a href="https://humeraaa.github.io/hci-cg-2026/">Live Demo</a>
+  </p>
+  <p><a href="index.html">Back to Home</a></p>
+</footer>
 
 </body>
 </html>

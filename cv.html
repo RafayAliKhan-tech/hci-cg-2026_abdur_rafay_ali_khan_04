@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Don Norman – CV</title>
+  <title>Rafay Ali Khan – CV</title>
 
   <style>
     body {
@@ -11,6 +11,7 @@
       background-color: #f4f4f4;
       color: #333333;
       font-size: 16px;
+      line-height: 1.6;
     }
     a {
       color: #0066cc;
@@ -31,6 +32,7 @@
       font-family: Georgia, serif;
       color: #222222;
       font-size: 1.5em;
+      margin-top: 1em;
     }
     h3 {
       font-family: Georgia, serif;
@@ -40,6 +42,7 @@
     nav ul {
       list-style: none;
       padding: 0;
+      margin: 0;
     }
     nav li {
       display: inline;
@@ -49,18 +52,37 @@
       font-weight: bold;
       color: #000000;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    td, th {
+      vertical-align: top;
+      text-align: left;
+      padding: 4px;
+    }
+    caption {
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+    article {
+      margin-bottom: 10px;
+    }
     footer {
       font-size: 0.9em;
       color: #555555;
+      margin-top: 1em;
     }
   </style>
 </head>
 <body>
 
-  <!-- Page header -->
+  <!-- Page Header -->
   <header>
-    <h1>Curriculum Vitae</h1>
-    <p>Don Norman – Cognitive Scientist & UX Pioneer</p>
+    <h1>Abdur Rafay Ali Khan – Curriculum Vitae</h1>
+    <p>5th Semester University Student</p>
   </header>
 
   <!-- Navigation -->
@@ -75,39 +97,57 @@
     </ul>
   </nav>
 
-  <!-- Main content -->
+  <!-- Main Content -->
   <main>
     <section>
       <h2>Education</h2>
-      <table width="100%" border="0">
-        <tr>
-          <td>
-            <ul>
-              <li>PhD in Psychology – University of Pennsylvania</li>
-              <li>BSc in Engineering – MIT</li>
-            </ul>
-          </td>
-        </tr>
+      <table border="0">
+        <caption>Academic Background</caption>
+        <tbody>
+          <tr>
+            <th scope="row">University</th>
+            <td>5th Semester, Bachelor Program</td>
+          </tr>
+          <tr>
+            <th scope="row">Skills / Courses</th>
+            <td>Python, C++, Java, SQL, MySQL, HCI, MERN stack developer, Excel, Python Libraries</td>
+          </tr>
+        </tbody>
       </table>
     </section>
 
     <section>
-      <h2>Work Experience</h2>
-      <table width="100%" border="0">
-        <tr>
-          <td>
-            <article>
-              <h3>Professor of Cognitive Science</h3>
-              <p>University of California, San Diego</p>
-            </article>
+      <h2>Projects & Work Experience</h2>
+      <article>
+        <h3>Social Network – Friend Recommendations</h3>
+        <p>C++ implementation using adjacency lists; JavaFX GUI version with FXML and Scene Builder.</p>
+      </article>
+      <article>
+        <h3>Student Record Management System</h3>
+        <p>C++ project using Hash Tables and BST; integrated with MySQL database and Qt GUI.</p>
+      </article>
+      <article>
+        <h3>KashBank</h3>
+        <p>Banking system prototype project with secure login, account management, and transaction simulation.</p>
+      </article>
 
-            <article>
-              <h3>Director, Design Lab</h3>
-              <p>Founder of the Nielsen Norman Group</p>
-            </article>
-          </td>
-        </tr>
-      </table>
+      <article>
+        <h3>PeerConnect</h3>
+        <p>Peer-to-peer collaboration platform allowing students to share resources and interact in real-time.</p>
+      </article>
+
+      <article>
+        <h3>EduGap Analyzer</h3>
+        <p>Excel-based analysis tool turned into interactive dashboard to visualize student performance gaps and trends.</p>
+      </article>
+      <article>
+        <h3>Data Analytics & Python Projects</h3>
+        <p>Worked on SQL, Pandas, NumPy, Matplotlib, Excel, Power BI, and data-driven insights.</p>
+      </article>
+      <article>
+        <h3>Other Skills & Tools</h3>
+        <p>Python Pandas, NumPy, Matplotlib, Excel, Power BI, GitHub, HCI design principles, UX concepts.</p>
+      </article>
     </section>
   </main>
 

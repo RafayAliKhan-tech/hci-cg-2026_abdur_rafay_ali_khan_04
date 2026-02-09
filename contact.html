@@ -6,35 +6,40 @@
   <title>Don Norman – Contact</title>
 
   <style>
+    
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       color: #333333;
       font-size: 16px;
     }
+
     a {
       color: #0066cc;
       text-decoration: none;
     }
+
     a:visited {
       color: #551a8b;
     }
+
     header, nav, main, footer {
       background-color: #ffffff;
-      padding: 10px;
-      /* Comment */
     }
+
     h1 {
       font-family: Verdana, sans-serif;
       color: #222222;
       font-size: 2em;
     }
+
     h2 {
       font-family: Georgia, serif;
       color: #222222;
-      font-size: 1.5em;
+      /* font-size: 1.5em; */
     }
-    nav ul {
+
+     nav ul {
       list-style: none;
       padding: 0;
     }
@@ -42,58 +47,59 @@
       display: inline;
       margin-right: 15px;
     }
-    nav a[aria-current="page"] {
-      font-weight: bold;
-      color: #000000;
-    }
+
     fieldset {
-      border: 1px solid #ccc;
-      padding: 10px;
       background-color: #fafafa;
-      margin-top: 10px;
     }
+
     legend {
       font-weight: bold;
     }
+
     label {
       display: block;
-      margin-top: 10px;
+      font-weight: bold;
     }
+
     input[type="text"], textarea {
-      width: 100%;
       font-family: Arial, sans-serif;
       font-size: 1em;
-      margin-top: 5px;
+      width: 100%;
+      
     }
+
     button {
-      margin-top: 10px;
+      font-family: Arial, sans-serif;
       font-size: 1em;
-      cursor: pointer;
+      color: #ffffff;
+      background-color: #1d59c1;
+      border: none;
     }
-    footer {
+   
+     footer {
       font-size: 0.9em;
       color: #555555;
-      text-align: center;
-      margin-top: 20px;
+      margin-top: 1em;
     }
+
   </style>
 </head>
 <body>
 
-  <!-- Page header -->
+  <!-- Header -->
   <header>
-    <h1>Contact</h1>
+    <h1>CONTACT</h1>
     <p>Send your message to Don Norman or the HCI course team</p>
   </header>
 
   <!-- Navigation -->
   <nav aria-label="Primary navigation">
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">HOME</a></li>
       <li><a href="cv.html">CV</a></li>
-      <li><a href="contact.html" aria-current="page">Contact</a></li>
-      <li><a href="analysis.html">Interaction Analysis</a></li>
-      <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
+      <li><a href="contact.html" aria-current="page"><b>CONTACT</b></a></li>
+      <li><a href="analysis.html">ANALYSIS</a></li>
+      <li><a href="norman2klm.html">GOMS-KLM</a></li>
       <li><a href="assignment01.html">Lab 01 Rules</a></li>
     </ul>
   </nav>
@@ -105,13 +111,13 @@
       <form action="#" method="post">
         <fieldset>
           <legend>Message Form</legend>
-
+          <br>
           <label for="subject">Subject</label>
           <input type="text" id="subject" name="subject">
-
+           <br><br>
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5"></textarea>
-
+          <textarea id="message" name="message" rows="10"></textarea>
+           <br>
           <button type="submit">Send</button>
         </fieldset>
       </form>

@@ -5,22 +5,86 @@
   <title>Lab Assignment 01 – Semantic HTML Foundations</title>
 
   <style>
-    /* Minimal styling allowed in Lab 01 (color + font only) */
-    body { font-family: Arial, sans-serif; }
-    .rule-box { background-color: #fff3cd; }
-    .note-box { background-color: #e7f3ff; }
-    .warning  { color: #7a1f1f; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333333;
+      font-size: 16px;
+    }
+
+    header, nav, main, footer {
+      background-color: #ffffff;
+      padding: 10px;
+    }
+
+    h1 {
+      font-family: Verdana, sans-serif;
+      color: #222222;
+      font-size: 2em;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      color: #222222;
+      font-size: 1.5em;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+
+    caption {
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    .rule-box {
+      background-color: #fff3cd;
+    }
+
+    .note-box {
+      background-color: #e7f3ff;
+    }
+
+    .warning {
+      color: #7a1f1f;
+    }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Lab Practice &amp; Assignment 01</h1>
-    <p>
-      Semantic HTML foundations using Norman, GOMS, and KLM
-      (<strong>Dix et al., Human–Computer Interaction</strong>, Ch. 12, p. 437: KLM/GOMS operators; plus Ch. 9: evaluation techniques)
-    </p>
-  </header>
+<header>
+  <h1>Lab Practice &amp; Assignment 01</h1>
+  <p>
+    Semantic HTML foundations using Norman, GOMS, and KLM
+    (<strong>Dix et al., Human–Computer Interaction</strong>, Ch. 12, p. 437: KLM/GOMS operators; plus Ch. 9: evaluation techniques)
+  </p>
+</header>
 
 <section class="note-box">
   <h2>Official Starter Code &amp; Live Demo</h2>
@@ -41,21 +105,19 @@
   </p>
 </section>
 
+<nav aria-label="Primary navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="analysis.html">Interaction Analysis</a></li>
+    <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
+    <li><a href="assignment01.html" aria-current="page">Lab 01 Rules</a></li>
+  </ul>
+</nav>
 
-  <nav aria-label="Primary navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="analysis.html">Interaction Analysis</a></li>
-      <li><a href="norman2klm.html">Norman–GOMS–KLM</a></li>
-      <li><a href="assignment01.html" aria-current="page">Lab 01 Rules</a></li>
-    </ul>
-  </nav>
-
-  <main>
-
-    <section>
+<main>
+  <section>
       <h2>Purpose</h2>
       <p>
         The purpose of Lab &amp; Assignment 01 is to bring all students to the same baseline level of
@@ -416,12 +478,14 @@
       </ul>
 
     </section>
+</main>
 
-  </main>
-
-  <footer>
-    <p><a href="index.html">Back to Home</a></p>
-  </footer>
+<footer>
+  <p>
+    &copy; 2026 HCI–CG Course |
+    <a href="index.html">Back to Home</a>
+  </p>
+</footer>
 
 </body>
 </html>
